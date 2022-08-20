@@ -1,0 +1,12 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/auth:1"
+        LoadBalancerInfo:
+          ContainerName: "auth"
+          ContainerPort: 80
+# Optional properties
+        PlatformVersion: "LATEST"
+        
