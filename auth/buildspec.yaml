@@ -8,9 +8,9 @@ phases:
     - echo Logging in to Amazon ECR...
     - aws --version
     - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 860061945305.dkr.ecr.ap-south-1.amazonaws.com
-    - IMAGE_NAME=pms-amol 
-    - IMAGE_URI=860061945305.dkr.ecr.ap-south-1.amazonaws.com/pms-amol:latest
-    - CONTAINER_NAME=pms-amol
+    - IMAGE_NAME=amol93 
+    - IMAGE_URI=860061945305.dkr.ecr.ap-south-1.amazonaws.com/amol93:latest
+    - CONTAINER_NAME=amol93
   build:
     commands:
     - echo Build started on `date`
