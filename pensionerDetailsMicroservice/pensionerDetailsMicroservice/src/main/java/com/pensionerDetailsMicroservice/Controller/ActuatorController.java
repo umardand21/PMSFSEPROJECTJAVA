@@ -8,6 +8,6 @@ public class ActuatorController {
 
 	@GetMapping("/actuator/info")
 	public String info() {
-		return "Auth-Service is up and running!!!";
+		return "Auth-Service is up and running!!!"+" Amol";
 	}
 }
